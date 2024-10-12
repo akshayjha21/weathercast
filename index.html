@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>WEATHER APP</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Weather App</h1>
+        <div class="inner-box">
+            <div class="add-task-el">
+                <input type="text" id="city-input" placeholder="location" required>
+                <button id="get-weather-btn" type="submit">Get Weather</button>
+            </div>
+            <div id="weather-info" class="hidden">
+                <h2 class="items" id="city-name"></h2>
+                <p class="items" id="temperature"></p>
+                <p class="items" id="description"></p>
+            </div>
+            <div class="hidden" id="error-message">
+                <p>wrong choice of city</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
